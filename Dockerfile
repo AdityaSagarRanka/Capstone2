@@ -6,5 +6,6 @@ RUN mkdir /quizapp
 WORKDIR /quizapp
 COPY requirements.txt /quizapp
 RUN pip install -r requirements.txt
+RUN pip install django-crispy-forms
 COPY . /quizapp
 
